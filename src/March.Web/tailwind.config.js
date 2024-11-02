@@ -6,10 +6,15 @@ module.exports = {
         "./Features/Server/StaticFiles/*.js",
         "./Features/Client/**/*.razor",
     ],
-  darkMode: 'selector',
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+    daisyui: {
+        themes: ["light", "dark", "cupcake"],
+    },
+    darkMode: 'selector',
+    theme: {
+        extend: {},
+    },
+    plugins: [
+        require('daisyui'),
+    ],
 }
 
